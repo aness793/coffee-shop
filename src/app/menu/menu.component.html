@@ -1,0 +1,19 @@
+<app-tags />
+<div class="container" >
+    <div class="cart" *ngFor="let item of food">
+        <div class="image">
+                    <img src="{{item.image}} " alt="">
+        </div>
+        <div class="information">
+            <h3 class="name">{{item.name}}</h3>
+           <!-- <p> <span>Origin:</span> {{item.origin}}</p> -->
+            <div class="sizes">
+               <span>sizes:</span> <p *ngFor='let size of item.sizes'>{{size}}</p>
+            </div>
+           <h3 class="price">{{item.price}}  <span class="dzd">dzd </span><span class="perpice" style="  color:var(--text);
+                font-size: 1rem;"> 
+                {{item.perpiece}}</span> </h3>
+        <a routerLink="/menu/{{item.id}}" class="button">See Details</a>
+        </div>
+    </div> 
+</div>

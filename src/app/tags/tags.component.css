@@ -1,0 +1,25 @@
+.container {
+    max-height: 4rem;
+    height: 3rem;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    gap: .5rem;
+    margin-top: 2rem;
+    align-items:center;
+    justify-content: center;
+
+}
+.tags {
+    padding: .2rem .4rem;
+    font-size: 1rem;
+    border-radius:3rem;
+    background-color: whitesmoke;
+    color: var(--deep-main);
+    cursor:pointer;
+}
+.selected {
+    color:var(--text);
+    background-color: var(--deep-main);
+}

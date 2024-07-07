@@ -1,0 +1,24 @@
+<div class="container" *ngIf="element">
+    <div class="image">
+        <img [src]="element.image" alt="">
+    </div>
+    <div class="description" >
+        <h3 class='name'> {{element.name}} </h3>
+        <div class="sizes">
+            <span class="pretext">sizes:</span> <p *ngFor='let size of element.sizes'>{{size}}</p>
+         </div>
+         <div class="origin">
+             <span class="pretext" style='font-size:1rem' >Origin: </span> <p>{{element.origin}} </p>
+            </div>
+            <div class="tags">
+                <span class="pretext">tags: </span><p class='tag ' *ngFor="let tag of element.tags"  routerLink="/tags/{{tag}}"   >{{tag}} </p>
+            </div>
+            <div class="price">
+            <span class="pretext" style="font-size: 1.5rem;" >price: </span> <h4 > {{element.price}} </h4> <span class="dzd">dzd </span>
+               <span class="perpice"> 
+                    {{element.perpiece}}
+               </span>
+           </div>
+            <a class="order">order</a>
+    </div>
+</div>

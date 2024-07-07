@@ -1,0 +1,116 @@
+.container {
+    width: 100svw;
+    height: fit-content;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    /* padding-left:5rem; */
+    gap: 2rem;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+.cart {
+    width: 20rem;
+    height: 21rem;
+    min-height: fit-content;
+    border: 1px solid balck;
+    border-radius:2rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+
+}
+.cart > * {
+    overflow: hidden;
+}
+.image {
+    margin: 0; padding: 0;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding: 0;
+    overflow: hidden;
+
+}
+.image img {
+    max-width: 20rem ;
+    max-height: 10rem;
+    object-fit:contain;
+}
+.information {
+    height: 11rem;
+    width: 20rem;
+    color: var(--deep-main);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    overflow: hidden;
+
+}
+.price {
+    color: var(--text);
+    overflow: hidden;
+}
+.button {
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    width: 8rem;
+    display: flex;
+    background-color: var(--text);
+    color: whitesmoke;
+    bottom: .8rem;
+    cursor:pointer;
+    margin: 0 auto;
+    overflow: hidden;
+    align-items:center;
+    justify-content:center;
+}
+.dzd{
+    color:var(--deep-main);
+}
+.name {
+    padding-left: .5rem;
+    font-size: 1.5rem;
+    padding-top:.5rem;
+    overflow: hidden;
+}
+.information p {
+    font-weight:700;
+    font-size: .8rem;
+    padding-left: .2rem;
+}
+.price {
+    padding-left: .5rem;
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding-top: .5rem;
+}
+.sizes span {
+    font-weight: 800;
+    font-size: .8rem;
+    margin: 0;
+    padding: 0;
+}
+.sizes {
+    padding-left: .5rem;
+    display:flex;
+    flex-wrap:wrap;
+    gap: .1rem;
+    align-items:center;
+
+}
+.sizes p {
+    padding: .2rem .4rem;
+    border-radius: 2rem;
+    background-color: rgb(240, 235, 235);
+    color: var(--text);
+}

@@ -1,0 +1,4 @@
+<div class="container">
+    <p class="tags" routerLink="">All</p>
+    <p class="tags" *ngFor="let i of tags" routerLink="/tags/{{i}}" [ngClass]="{selected: i == gg}" >{{i}} </p>
+</div>
